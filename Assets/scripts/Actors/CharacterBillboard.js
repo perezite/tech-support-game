@@ -56,7 +56,7 @@ function Update()
 function MovingNorth(){
 	//print("N");
 	if(matChanged == false && changeMat == true){
-		player.renderer.material = spTexN;
+		player.GetComponent.<Renderer>().material = spTexN;
 		matChanged = true;
 		yield WaitForSeconds(timer);
 		matChanged = false;
@@ -65,7 +65,7 @@ function MovingNorth(){
 function MovingSouth(){
 	//print("S");
 	if(matChanged == false && changeMat == true){
-		player.renderer.material = spTexS;
+		player.GetComponent.<Renderer>().material = spTexS;
 		matChanged = true;
 		yield WaitForSeconds(timer);
 		matChanged = false;
@@ -74,7 +74,7 @@ function MovingSouth(){
 function MovingWest(){
 	//print("W");
 	if(matChanged == false && changeMat == true){
-		player.renderer.material = spTexW;
+		player.GetComponent.<Renderer>().material = spTexW;
 		matChanged = true;
 		yield WaitForSeconds(timer);
 		matChanged = false;
@@ -83,7 +83,7 @@ function MovingWest(){
 function MovingEast(){
 	//print("E");
 	if(matChanged == false && changeMat == true){
-		player.renderer.material = spTexO;
+		player.GetComponent.<Renderer>().material = spTexO;
 		matChanged = true;
 		yield WaitForSeconds(timer);
 		matChanged = false;

@@ -14,7 +14,7 @@ public class TargetController : MonoBehaviour {
 			Destroy(dude);
 			
 			// remove the dude's renderer
-			GameObject.FindGameObjectWithTag("Level Exit Closer").rigidbody.useGravity = true;
+			GameObject.FindGameObjectWithTag("Level Exit Closer").GetComponent<Rigidbody>().useGravity = true;
 			 
 		}
 	}

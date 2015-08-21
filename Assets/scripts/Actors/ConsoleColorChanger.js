@@ -16,7 +16,7 @@ var blueMatR : Material;
 
 function Start () {
 
-	this.renderer.material = yellowMatL;
+	this.GetComponent.<Renderer>().material = yellowMatL;
 	rndVal = Random.value;
 	
 	tagString = this.transform.parent.tag;
@@ -24,34 +24,34 @@ function Start () {
 	
 	
 	if(tagString == "Yellow" && rndVal >= 0.5){
-		this.renderer.material = yellowMatL;
+		this.GetComponent.<Renderer>().material = yellowMatL;
 	}
 	if(tagString == "Yellow" && rndVal < 0.5){
-		this.renderer.material = yellowMatR;
+		this.GetComponent.<Renderer>().material = yellowMatR;
 	}
 	if(tagString == "Green" && rndVal >= 0.5){
-		this.renderer.material = greenMatL;
+		this.GetComponent.<Renderer>().material = greenMatL;
 	}
 	if(tagString == "Green" && rndVal < 0.5){
-	this.renderer.material = greenMatR;
+	this.GetComponent.<Renderer>().material = greenMatR;
 	}
 	if(tagString == "Violet" && rndVal >= 0.5){
-		this.renderer.material = violetMatL;
+		this.GetComponent.<Renderer>().material = violetMatL;
 	}
 	if(tagString == "Violet" && rndVal < 0.5){
-	this.renderer.material = violetMatR;
+	this.GetComponent.<Renderer>().material = violetMatR;
 	}
 	if(tagString == "Red" && rndVal >= 0.5){
-	this.renderer.material = redMatL;
+	this.GetComponent.<Renderer>().material = redMatL;
 	}
 	if(tagString == "Red" && rndVal < 0.5){
-		this.renderer.material = redMatR;
+		this.GetComponent.<Renderer>().material = redMatR;
 	}
 	if(tagString == "Blue" && rndVal >= 0.5){
-		this.renderer.material = blueMatL;
+		this.GetComponent.<Renderer>().material = blueMatL;
 	}
 	if(tagString == "Blue" && rndVal < 0.5){
-		this.renderer.material = blueMatR;
+		this.GetComponent.<Renderer>().material = blueMatR;
 	}
 
 }

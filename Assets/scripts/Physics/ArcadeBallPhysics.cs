@@ -15,13 +15,13 @@ public class ArcadeBallPhysics : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		speed = rigidbody.velocity.magnitude;
+		speed = GetComponent<Rigidbody>().velocity.magnitude;
 	}
 		
 	void FixedUpdate ()
 	{
 		// get speed of rigidbody
-		speed = rigidbody.velocity.magnitude;
+		speed = GetComponent<Rigidbody>().velocity.magnitude;
 	
 		// Get pos of the ball.
 		Vector3 pos = transform.position;
@@ -43,7 +43,7 @@ public class ArcadeBallPhysics : MonoBehaviour {
 		Vector3 R = Vector3.Reflect(V, N).normalized;
 		
 		// Assign normalized reflection with the constant speed
-		rigidbody.velocity = R * speed;
+		GetComponent<Rigidbody>().velocity = R * speed;
 	}
 
 }

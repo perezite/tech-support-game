@@ -15,14 +15,14 @@ public class ColorSwitcher : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		inactiveMaterial = (Material)Resources.Load("textures/DarkGrey", typeof(Material));
-		activeMaterial = renderer.material;
+		activeMaterial = GetComponent<Renderer>().material;
 	}
 	
 	// Update is called once per frame
 	void Update () {	
 		if (isActive)
-			renderer.material = activeMaterial;
+			GetComponent<Renderer>().material = activeMaterial;
 		else
-			renderer.material = inactiveMaterial;
+			GetComponent<Renderer>().material = inactiveMaterial;
 	}
 }

@@ -31,7 +31,7 @@ public class TurretController : MonoBehaviour {
 		{
 			//Debug.Log("shoot");
 			GameObject projectileClone = (GameObject) Instantiate(projectilePrefab, transform.position, transform.rotation);
-			projectileClone.rigidbody.velocity = transform.forward * speed;
+			projectileClone.GetComponent<Rigidbody>().velocity = transform.forward * speed;
 			Destroy (projectileClone, 5f);
 		}
 	}

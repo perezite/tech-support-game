@@ -5,6 +5,7 @@ public class Billboard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {	
-		transform.rotation = Camera.main.transform.rotation;		
+		transform.rotation = Camera.main.transform.rotation;	
+		Debug.Log ("test");
 	}
 }
